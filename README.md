@@ -1,16 +1,35 @@
-# tts_for_teaching
-Synthesized voice for your video presentation
+# Text-to-Speech utility for teaching
+
+Synthesized voice for your video presentation, using MS Azure Speech Services.
 
 ## Get started
 
-First get a Azure Key and Region, follow [this link](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/overview) for more details.
-Add the keys in the `azure_tts\key.cfg`.
+The following steps should be performed to prepare your system.
 
-Go to the main diretory of the project and run 
+1. Install `python` and `pip`, if they are not already installed. Follow the platform specific installation instructions.
 
-   ```bash
+1. Clone or download this repository from Github: https://github.com/babaknaderi/tts_for_teaching , e.g.
+
+    ```bash
+    git clone https://github.com/babaknaderi/tts_for_teaching
     cd tts_for_teaching
+    ```
+
+1. Install the python module dependencies in `requirements.txt` using `pip`
+
+    ```bash
     pip install -r requirements.txt
+    ```
+
+1. Get an Azure Key and Region. Follow [this link](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/overview) for more details. You can use the free trial and that will be enough.
+
+1. Add the keys in the `azure_tts\key.cfg`.
+
+
+   ```cfg
+[speech_service_key]
+speech_key:YourSubscriptionKey
+service_region:YourServiceRegion
    ```
     
 ## Runs the first test
@@ -52,11 +71,11 @@ Enjoy using Text to Speech!
      </speak>
    ```
  
+You can find lots of information [about SSML here](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-synthesis-markup?tabs=csharp)
+You may change the **style**, for part of the text, or add _pause_/_break_ or _silence_. 
+You should specify _paragraphs_, and _sentences_. 
+There are also lot more that you can do, to create a natural and well spoken text. **That will increase the value of your
+presentation and distinguishes excellent works from others**
  
- 
-TODO: Some notes about SSML files, samples and refrence for further details.
-
-
-
 ## How to merge wave and videos
 TODOD
