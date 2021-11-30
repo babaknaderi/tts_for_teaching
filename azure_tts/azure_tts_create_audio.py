@@ -1,13 +1,8 @@
 import azure.cognitiveservices.speech as speechsdk
 from os import listdir, path, mkdir
+import argparse
+import configparser as CP
 
-
-# Replace with your own subscription key and region identifier from here: https://aka.ms/speech/sdkregion
-speech_key, service_region = "YourSubscriptionKey", "YourServiceRegion"
-speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
-# set the config
-speech_config.speech_synthesis_language = 'en-US'
-speech_config.speech_synthesis_voice_name = 'en-US-JennyNeural'
 
 def create_wav(text_file, output):
     # Creates an audio configuration that points to an audio file.
@@ -44,9 +39,27 @@ def create_wav(text_file, output):
 
 
 if __name__ == '__main__':
+    print("Welcome, create wave files fromm SSML using Azure")
+    parser = argparse.ArgumentParser(description='Create wave files fromm SSML using Azure')
+    parser.add_argument("--input_dir", help="Directory contains all SSML files", required=True)
+    parser.add_argument("--out_dir", help="Directory that will contain all wave files", required=True)
+    args = parser.parse_args()
 
-    directory_with_text_files = '../sample_text'
-    output_dir = '../output'
+    cfg = CP.ConfigParser()
+    cfg._interpolation = CP.ExtendedInterpolation()
+    cfg.read(path.join(path.dirname(__file__), 'key.cfg'))
+
+    cfg = cfg['speech_service_key']
+    speech_key = cfg['speech_key']
+    service_region = cfg['service_region']
+    speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
+    # set the config
+
+    speech_config.speech_synthesis_language = 'en-US'
+    speech_config.speech_synthesis_voice_name = 'en-US-JennyNeural'
+
+    directory_with_text_files = args.input_dir
+    output_dir = args.out_dir
 
     text_files = [f for f in listdir(directory_with_text_files) if path.isfile(path.join(directory_with_text_files, f))]
     if not path.exists(output_dir):
