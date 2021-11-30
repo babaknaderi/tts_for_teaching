@@ -26,10 +26,10 @@ The following steps should be performed to prepare your system.
 1. Add the keys in the `azure_tts\key.cfg`.
 
 
-   ```cfg
-[speech_service_key]
-speech_key:YourSubscriptionKey
-service_region:YourServiceRegion
+   ```INI
+    [speech_service_key]
+    speech_key:YourSubscriptionKey
+    service_region:YourServiceRegion
    ```
     
 ## Runs the first test
