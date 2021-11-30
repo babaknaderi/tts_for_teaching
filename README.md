@@ -36,7 +36,6 @@ service_region:YourServiceRegion
 Runs the following command: 
 
    ```bash
-    cd tts_for_teaching
     python azure_tts\azure_tts_create_audio.py --input_dir sample_text --out_dir output
    ```
 
