@@ -129,5 +129,4 @@ dmypy.json
 .pyre/
 
 /azure_tts/key.cfg
-out/
 output/
