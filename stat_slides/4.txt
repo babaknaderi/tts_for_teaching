@@ -1,0 +1,13 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="en-US-ChristopherNeural">
+<prosody rate="0%" pitch="0%">
+
+<p> Now, lets talk about the "statistics" and its difference with "probability".</p>
+
+<p>Assume we have a basket with different colorful marbles. We already know how many marbles from each color is in the basket.
+ Using probability, we can predict what would be a distribution of marbles when one took a handful of them from that basket.</p>
+
+<p> Another scenario could be, that we took a handful of marbles from the basket. We know what is inside our hand.
+Now, given that, what can we estimate about content of the basket. We can answer this question using statistics. </p>
+
+</prosody></voice></speak>

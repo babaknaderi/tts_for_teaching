@@ -1,0 +1,16 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="en-US-ChristopherNeural">
+<prosody rate="0%" pitch="0%">
+
+<p> Lets start with the organizational details.
+
+<s> You will get 3 <prosody rate="+30.00%">ECT</prosody> points for this seminar.</s>
+<s> The seminar is instructed by <phoneme alphabet="ipa" ph="bɒːbæk"> Babak </phoneme> Naderi, Vera Schmitt, and Steven Schmidt. </s>
+<s> Our sessions are scheduled on Thursdays at 14:15.</s>
+<s>Please check the weekly plan.</s>
+ <s>some weeks we have mandatory meetings
+ others only on request. Meetings are always online.</s>
+ <s> The seminar is limited to 22 students</s>
+</p>
+
+</prosody></voice></speak>

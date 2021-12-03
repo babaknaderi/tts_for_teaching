@@ -2,6 +2,11 @@ import azure.cognitiveservices.speech as speechsdk
 from os import listdir, path, mkdir
 import argparse
 import configparser as CP
+import xml.dom.minidom
+
+
+def print_warning(txt):
+    print(f"  WARNING:{txt}")
 
 
 def create_wav(text_file, output):
@@ -17,11 +22,16 @@ def create_wav(text_file, output):
     # Replace with your own text.
     print(f'Start with {text_file}')
     # read the text
-    file = open(text_file, mode='r')
+    file = open(text_file, mode='r',encoding='utf8')
     # read all lines at once
     tts = file.read()
     # close the file
     file.close()
+    try:
+        xml.dom.minidom.parseString(tts)
+    except:
+        print_warning(f"XML in file {text_file} is not valid. Continue with next file.")
+        return
 
     # speak_ssml_async
     result = speech_synthesizer.speak_ssml_async(tts).get()

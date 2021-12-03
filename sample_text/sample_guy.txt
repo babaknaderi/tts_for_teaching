@@ -1,0 +1,8 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US"><voice name="en-US-GuyNeural"><mstts:express-as style="newscast" ><prosody rate="9%" pitch="-8%">
+<p>Welcome to the Applied Statistics For HCI seminar. <s>In this seminar we focus on how to apply specific statistical methods to important research questions regarding perceived quality.</s></p>
+
+<p><s>We focus on following statistical methods:</s> 
+Data Cleansing,<break strength="weak"/> Visualization,<break strength="weak"/> Correlation,<break strength="weak"/>Regression, <break strength="weak"/>Factor Analysis,<break strength="weak"/> Hypothesis Testing,<break strength="weak"/> Mixed Effect Models, <break strength="weak"/>Non-parametric tests, <break strength="weak"/>Clustering and Classification, <break strength="weak"/> Moderation, <break strength="weak"/>Mediation, <break strength="weak"/>Reliability analysis,<break strength="weak"/> and Structural Equation Modeling.</p>
+
+
+</prosody></mstts:express-as></voice></speak>

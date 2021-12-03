@@ -1,0 +1,10 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="en-US-ChristopherNeural">
+<prosody rate="0%" pitch="0%">
+<prosody volume="+250.00%" pitch="x-low">Welcome </prosody> to <prosody pitch="x-high">Applied Statistics For HCI </prosody> seminar.
+<p>
+<s> This seminar is part of the Quality and Usability Seminars, organized every semester.</s>
+</p>
+</prosody></voice></speak>
+
+
